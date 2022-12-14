@@ -142,7 +142,7 @@ print("=====FIB=======")
 def fib(num1, num2):
   count = 9
   fib = [num1, num2]
-  for each in range(0,count+1):
+  for each in range(0,count):
     fib.append(fib[-1]+fib[-2])
   return fib
 
