@@ -57,8 +57,8 @@ print(mid('stars'))
 print("=====HIDE======")
 def hide_creditcard(num):
   n = 4
-  replacementStr = '****'
-  hiddenCard = num[:-n] + replacementStr
+  replacementStr = '*'
+  hiddenCard = num[:-n] + replacementStr*n
   return hiddenCard
 
 print(hide_creditcard('3456732387876647'))
@@ -122,7 +122,7 @@ print(discount(135, 10))
 # ---------------------------------
 print("=====PYTHAG=======")
 def pythagorean(adj_leg, opp_leg):
-  return (adj_leg ** 2 + opp_leg ** 2)
+  return math.sqrt(adj_leg ** 2 + opp_leg ** 2)
 
 print(pythagorean(4, 5))
 
